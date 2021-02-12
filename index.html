@@ -5,9 +5,9 @@
   <title>杨丫头的新年礼物</title>
   <style>
     body {
-      /* overflow: hidden; */
-      width: 100%;
-      height: 100%;
+      overflow: hidden;
+      margin:0;
+      padding:0;
     }
 
     #div {
@@ -33,11 +33,13 @@
   <script src="js/OrbitControls.js"></script>
   <script src="js/STLLoader.js"></script>
   <script src="js/script.js"></script>
-  <canvas width="100%" height="100%" tabindex="0"></canvas>
-  <!-- <canvas width="980" height="auto" tabindex="0" style="width: 980px; height: 1557px;"></canvas> -->
+  <!-- <canvas width="100%" height="100%" tabindex="0"></canvas> -->
+  <canvas width="980" height="auto" tabindex="0" style="width: 980px; height: 1557px;"></canvas>
 
 </body>
 <script>
+window.onload=function(){
+
   var str = "Happy New Year, KeXinYang" + "<p></p>" + "新年快乐, 杨丫头 : ) <p>吃的开心</p><p>喝的开心</p><p>玩的开心</p><p>学的开心</p>"
   var div = document.getElementById("div").getElementsByTagName('h1')[0]
 
@@ -59,6 +61,7 @@
       clearTimeout(timer)
     }
   }
+}
 </script>
 
 </html>
